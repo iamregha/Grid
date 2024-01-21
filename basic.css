@@ -1,0 +1,20 @@
+
+
+.container > :nth-child(1){
+    background-color: green;
+}
+.container > :nth-child(2){
+    background-color: greenyellow;
+}
+.container > :nth-child(3){
+    background-color: green;
+}
+.container > :nth-child(4){
+    background-color: brown;
+}
+.container > :nth-child(5){
+    background-color: violet;
+}
+.container > :nth-child(6){
+    background-color: indigo;
+}
