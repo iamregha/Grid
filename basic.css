@@ -1,20 +1,31 @@
 
 
-.container > :nth-child(1){
-    background-color: green;
+html, body{
+    background-color: #ffeead;
+    margin: 10px;
 }
-.container > :nth-child(2){
-    background-color: greenyellow;
+
+.container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
 }
-.container > :nth-child(3){
-    background-color: green;
+
+.header{
+    background: #3366ff;
 }
-.container > :nth-child(4){
-    background-color: brown;
+
+.menu{
+    background-color: #99ccff;
 }
-.container > :nth-child(5){
-    background-color: violet;
+
+.content{
+    background-color: #aeae16;
 }
-.container > :nth-child(6){
-    background-color: indigo;
+
+.footer{
+    background: #9999cc;
 }
+
