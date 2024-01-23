@@ -1,12 +1,54 @@
 
 
-.container{
+/* .container{
     display: grid;
     /* let's try a short hand for defining rows and columns */
 
-    grid-template: repeat(2, 50px) / repeat(3, 1fr);
+    /* grid-template: repeat(3, 50px) / repeat(2, 1fr); */
+
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px auto 40px ; */
 
     /* grid-template-columns: 100px auto 100px;
     grid-template-rows: 50px 50px; */
+    /* gap: 3px;
+} */
+
+/* .header{
+    grid-column: 1 / -1;
+}
+
+.footer{
+    grid-column: 1 / -1;
+} */
+
+
+/* method two.. a cool way of doing the above */
+
+.container{
+    height: 100%;
+    display: grid;
     gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+.header{
+    grid-area: h;
+}
+
+.menu{
+    grid-area: m;
+}
+
+.content{
+    grid-area: c;
+}
+
+.footer{
+    grid-area: f;
 }
